@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-zemin: #fefefe;
+  --color-koyu: #1e1e1e;
+  --color-koyu-2: #2a2a2a;
+  --color-gri-1: #e5e5e5;
+  --color-gri-2: #dedede;
+  --color-gri-3: #c4c4c4;
+  --color-soluk: #6e6e6e;
+  --color-pembe: #f386a1;
+  --color-magenta: #d45bb6;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+  --radius-kare: 2px;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  background: var(--color-zemin);
+  color: var(--color-koyu);
+}
+
+.vurgu-gradyan {
+  background-image: linear-gradient(90deg, var(--color-pembe), var(--color-magenta));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

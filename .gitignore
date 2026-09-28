@@ -1,0 +1,11 @@
+.env
+.env.local
+node_modules/
+.next/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.wav
+sunucu/veri/
+sunucu/veri-*/
+sunucu/jre-*/
